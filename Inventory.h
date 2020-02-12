@@ -5,6 +5,14 @@
 using std::string;
 using std::ostream;
 
+/*
+ * Inventory class
+ * 
+ * m_name - string, name of inventory item
+ * m_price - float, price of individual item
+ * m_in_stock - int, number of items in stock
+ * 
+ */
 class Inventory
 {
   private:
