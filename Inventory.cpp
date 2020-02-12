@@ -4,6 +4,8 @@
 
 using std::string;
 using std::ostream;
+using std::cout;
+using std::endl;
 
 /*
  * Inventory::Inventory()
@@ -23,7 +25,12 @@ Inventory::Inventory(string name, float price, int count)
  */
 void Inventory::sell()
 {
-  m_in_stock--;
+  // if there is no stock, print an error
+  if (m_in_stock == 0) {
+    cout << "Sorry, that item is out of stock" << endl;
+  } else {
+    m_in_stock--;
+  }
 }
 
 /*
